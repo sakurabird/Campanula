@@ -11,7 +11,7 @@ A simple blog template built with Next.js that allows you to generate static blo
 
 ## Demo
 
-Check out the live demo: [TODO](TODO)
+Check out the live demo: [Tokimeki](https://campanula-livid.vercel.app/)
 
 ## Usage
 
@@ -39,7 +39,9 @@ Make sure you have the following software installed:
 ### Configuration
 
 1. Update the site metadata in the `data/siteMetadata.js` file.
-2. TODO
+2. Please place the favicon, icon, and apple-icon images directly under the app folder. For detailed instructions, please refer to the official website below:
+Metadata Files: favicon, apple-icon, and icon | Next.js
+3. TODO
 
 ### Creating static pages
 
@@ -113,7 +115,8 @@ Mr. timlrx's code was fantastic, and I have adopted many aspects of it in this p
 
 ## Resources
 
-Thanks! // TODO
+I used the materials from the following websites. Thank you very much!
+
 - [icooon-mono](https://icooon-mono.com/)
 - <a href="https://unsplash.com/ja/s/%E5%86%99%E7%9C%9F/cat-and-dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@sera_fima?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Serafima Lazarenko</a>が撮影した写真
 - [Iconify Design: All popular icon sets, one framework.](https://iconify.design/)

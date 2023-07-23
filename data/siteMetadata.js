@@ -15,11 +15,11 @@ const siteMetadata = {
     },
   },
   locale: "en-US", // required
-  siteUrl: "https://example.com/", // required
+  siteUrl: "https://campanula-livid.vercel.app/", // required
   ogImage: "/images/stock/ogp.png", // required
   keywords: ["Next.js", "Tailwind CSS", "Daisy UI"], // optional
   creator: "Dan Shari", // optional
-  canonicalUrl: "https://example.com/", // optional
+  canonicalUrl: "https://campanula-livid.vercel.app/", // optional
   copyrightYear: "2023", // optional (Used in the rss feed)
   twitterCard: {
     // See https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
@@ -28,12 +28,9 @@ const siteMetadata = {
     creatorId: "", // optional
   },
   robots: {
-    // TODO後で変える
-    index: false, // required
-    follow: false, // required
+    index: true, // required
+    follow: true, // required
   },
-  // TODO ↓を見てappフォルダ配下にfaviconとiconとapple-iconを設置してもらう
-  // [Metadata Files: favicon, apple-icon, and icon | Next.js](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#favicon)
   // Common
   avatarImage: "/images/stock/avatar.png", // required
   authorDescription:
