@@ -1,0 +1,94 @@
+---
+title: "This is an example of result of remark-gfm"
+date: "2022-01-01"
+category: "Tech"
+tags: ["unified", "sample"]
+subtitle: "How to use GitHub Flavored Markdown(GFM) using remark-gfm"
+lastmod: "2022-01-01"
+draft: false
+metadescription: ""
+image: ""
+---
+
+Please refer to the following official website for instructions on how to use GFM (autolink literals, footnotes, strikethrough, tables, tasklists):
+[remarkjs/remark-gfm: remark plugin to support GFM (autolink literals, footnotes, strikethrough, tables, tasklists)](https://github.com/remarkjs/remark-gfm)
+
+Following codes is adopted from https://github.com/remarkjs/remark-gfm
+
+---
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
+
+## Additional Examples
+
+| Alpha | Bravo   |
+| ----- | ------- |
+| 中文  | Charlie |
+| 👩‍❤️‍👩    | Delta   |
+
+| TH  | TH                 |
+| --- | ------------------ |
+| TD  | セル内で<br />改行 |
+
+## Markdown code before conversion
+
+```markdown
+# GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
+
+## Additional Examples
+
+| Alpha | Bravo   |
+| ----- | ------- |
+| 中文  | Charlie |
+| 👩‍❤️‍👩    | Delta   |
+
+| TH  | TH                 |
+| --- | ------------------ |
+| TD  | セル内で<br />改行 |
+```

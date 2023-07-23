@@ -1,0 +1,58 @@
+---
+title: "Routing and blog navigation"
+date: "2023-05-04"
+category: "Tech"
+tags: ["usage"]
+subtitle: "Description of the path for displaying a list of blog articles"
+lastmod: "2023-05-23"
+draft: false
+metadescription: "Blog navigation: the path for displaying a list of blog articles"
+image: ""
+---
+
+## The configuration of the routing in this blog template
+
+| Page | Route	| Example URL |
+| ---- | ---- | ---- |
+| Home | app/page.tsx | / |
+| About | app/about/page.tsx | /about |
+| Blog<br />(All) | app/blog/page.tsx | /blog |
+| Blog<br />(page) | app/blog/page/[number]/page.tsx | /blog/page/[number] |
+| Post | app/blog/[slug]/page.tsx | /blog/[slug] |
+| Categories<br />(Top) | app/categories/page.tsx | /categories |
+| Categories | app/categories/[category]<br />/page.tsx | /categories/[category] |
+| Categories<br />(Page) | app/categories/[category]<br />/[page]/[number]/page.tsx | /categories/[category]<br />/page/[number] |
+| Tags<br />(Top) | app/tags/page.tsx | /tags |
+| Tags | app/tags/[tag]/page.tsx | /tags/[tag] |
+| Tags<br />(Page) | app/tags/[tag]<br />/page/[number]/page.tsx | /tags/[tag]<br />/page/[number] |
+| Archive<br />(Top) | app/archive/page.tsx | /archive |
+| Archive | app/archive/[yy_mm]/page.tsx | /archive/[yy_mm] |
+| Archive<br />(Page) | app/archive/[yy_mm]<br />/page/[number]/page.tsx | /archive/[yy_mm]<br />/page/[number] |
+
+## How to display a list of blog articles
+
+### Category
+
+To display a list of a specific category, such as "Food", you can follow these steps:
+
+- In the front matter of the Markdown file, Fill in `category: "Food"`.
+- Access the list using the URL `/categories/Food`.
+
+### Tag
+
+To display a list of a specific tag, such as "news", you can follow these steps:
+
+- In the front matter of the Markdown file, Fill in `tags: ["news"]`.
+- Access the list using the URL `/tags/news`.
+
+### Archive
+
+The current path for displaying the blog archive is accessible in the format of `archive/2023_03`, where the year and month are specified.
+
+This format allows you to access the blog archive for a specific month and year.
+
+## Pagination
+
+Currently, the blog list page paginates based on the value of the `blog.postPerPage` variable in `siteMetadata.js`.
+When you access `/blog/page/1`, it will take you to the first page of the blog list.
+Similarly, paging is also supported for `categories`, `tags`, and `archive`.

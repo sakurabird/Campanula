@@ -1,0 +1,42 @@
+---
+title: "💡 This area of the home page is the List section"
+date: "2022-12-31"
+category: "Tech"
+tags: ["news", "usage"]
+subtitle: "How to show List section in the home page."
+lastmod: "2023-05-07"
+draft: false
+metadescription: ""
+image: ""
+---
+
+## About List section
+
+This section is a list area.
+
+You can display a list of blog post titles and subtitles that have specific categories or tags on the homepage.
+
+Instructions:
+
+1. Write the blog posts that you want to display in the list.
+2. Add the desired category or tag to the front matter of the blog post.
+   For example, in this post, it is written as `tags: ['news']`.
+3. Edit the `home/list` variable in the `data/siteMetadata.js` file.
+
+```javascript:JavaScript showLineNumbers
+home: {
+  list: {
+    enable: true, // required (If false, display nothing)
+    href: "/tags/news", // required (If enabled, the path to the specific blog categories or tag must be written. ex:'/categories/tech' '/tags/food' )
+    title: "News", // optional (If blank, display nothing)
+    maxCount: 3, // required
+  },
+},
+```
+
+- Set `enable` to `true` to enable the list display.
+- Specify the path of the category or tag you want to display in `href`.
+  For example, if you want to display the category 'tech', use '/categories/tech'. If you want to display the tag 'food', use '/tags/food'.
+- Enter the title you want to display in the list area in the `title` field. If you don't need a title, leave it as `''`.
+- Enter the number of items you want to display in the `maxCount` field.
+  The list area will display the specified number of items in descending order of date.

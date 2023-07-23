@@ -1,0 +1,24 @@
+---
+title: "Nested routes"
+date: "2023-07-04"
+category: "Tech"
+tags: ["dynamic-routes", "usage"]
+subtitle: "You can save articles within your preferred directory."
+lastmod: "2023-07-04"
+draft: false
+metadescription: ""
+image: ""
+---
+
+Even if it doesn't match a specific path pattern, you can catch the segment and perform dynamic routing.[^1]
+
+[^1]: [Catch-all Segments](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments)
+
+The usage of this blog template is as follows:
+By creating a directory with any desired name under the directory "/data/blog" and creating an article within it, the routing process will be automatically handled.
+
+For example, the current displayed article is saved in a directory named "nested-route" as follows:
+/data/blog/nested-route/nested-route.mdx
+
+You can access it in the browser as follows:
+/blog/nested-route/nested-route

@@ -1,0 +1,17 @@
+/**
+ * CSS Styles for code block quote.
+ * I am grateful to be able to use this library🐱
+ * https: //github.com/remarkjs/remark-toc
+ */
+
+#table-of-contents {
+  @apply px-4 max-w-sm xl:max-w-lg mt-8;
+}
+
+#table-of-contents + ul {
+  @apply ring-2 py-4 max-w-sm xl:max-w-lg ring-base-content/30 rounded-lg mb-8 sm:mb-12;
+}
+
+#table-of-contents + ul li {
+  @apply ml-2 marker:text-base-content/20 marker:text-sm;
+}

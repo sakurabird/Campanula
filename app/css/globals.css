@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'katex/dist/katex.css';
+@import './remark-toc.css';
+
+a:hover:not(.hover-not) {
+  @apply text-primary;
+}
+
+/* Block quote styles */
+.blockquote {
+  @apply pl-4 text-base-content bg-base-100;
+}
