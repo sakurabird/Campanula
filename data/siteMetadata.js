@@ -15,11 +15,11 @@ const siteMetadata = {
     },
   },
   locale: "en-US", // required
-  siteUrl: "https://campanula-livid.vercel.app/", // required
+  siteUrl: "https://campanula-demo.vercel.app/", // required
   ogImage: "/images/stock/ogp.png", // required
   keywords: ["Next.js", "Tailwind CSS", "Daisy UI"], // optional
   creator: "Dan Shari", // optional
-  canonicalUrl: "https://campanula-livid.vercel.app/", // optional
+  canonicalUrl: "https://campanula-demo.vercel.app/", // optional
   copyrightYear: "2023", // optional (Used in the rss feed)
   twitterCard: {
     // See https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
@@ -42,7 +42,7 @@ const siteMetadata = {
   youtube: "https://youtube.com", // optional
   linkedin: "https://www.linkedin.com", // optional
 
-  // Header (Please modify headerNavLinks.ts)
+  // Header (Please modify data/headerNavLinks.ts)
   header: {
     // icon: '', // optional
     icon: "/images/stock/icon.svg", // optional (If blank, display nothing)

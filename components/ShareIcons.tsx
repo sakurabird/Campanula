@@ -12,7 +12,6 @@ export interface ShareIconsProps {
 }
 
 const ShareIcons = (props: ShareIconsProps) => {
-  // TODO ちゃんとしたURLで公開してから再度テスト
   const [copied, setCopied] = useState(false)
   const [mounted, setMounted] = useState(false)
 

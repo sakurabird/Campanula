@@ -192,7 +192,6 @@ const BlogNavigation = () => {
     </div>
   )
 
-  // TODO test
   const rssView = (
     <>
       <div className="mt-0 mb-0 divider"></div>
