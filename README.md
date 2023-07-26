@@ -48,15 +48,15 @@ Make sure you have the following software installed:
 
 ## Creating Static Pages
 
-By default, there are two static pages, `Home` and `About`, and all others are related to blog posts.
-Please also check out the following article on routing:
-[Routing and blog navigation](/blog/routing-and-blog-navigation)
+By default, there are two static pages, `Home` and `About`, and all others are related to blog posts.<br>
+Please also check out the following article on routing:<br>
+[Routing and blog navigation](https://campanula-demo.vercel.app/blog/routing-and-blog-navigation)
 
 ### Creating Home Page
 
-The configuration method for the `Home` page has been summarized in another article.
-Please take a look at:
-[How to create a Home page in Campanula](/blog/creating-home-page)
+The configuration method for the `Home` page has been summarized in another article.<br>
+Please take a look at:<br>
+[How to create a Home page in Campanula](https://campanula-demo.vercel.app/blog/creating-home-page)
 
 ### Creating About Page
 
@@ -68,12 +68,12 @@ TODO
 
 ### Static Assets
 
-First, in Next.js, there's a rule for using static assets that they should be placed in a directory named `public` directly under the root directory.
-For more details, please check the official website below:
+First, in Next.js, there's a rule for using static assets that they should be placed in a directory named `public` directly under the root directory.<br>
+For more details, please check the official website below:<br>
 [Optimizing: Static Assets | Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets)
 
-`Campanula` has the directories `blog` and `stock` in the `public/images` directory.
-These directories are used to store images for blog posts and other pages like the home and about pages.
+`Campanula` has the directories `blog` and `stock` in the `public/images` directory.<br>
+These directories are used to store images for blog posts and other pages like the home and about pages.<br>
 You are free to create subdirectories or change directory names, but you must also update the paths in the front matter and `siteMetadata.js` to reflect the changes for the images.
 
 ## Creating Blog Posts
