@@ -1,0 +1,23 @@
+---
+title: "The location of asset files in Campanula"
+date: "2023-07-30"
+category: "Tech"
+tags: ["usage"]
+subtitle: "This entry describes where to place images to be displayed in blog posts and static pages."
+lastmod: "2023-07-30"
+draft: false
+metadescription: "The location of asset files in Campanula"
+image: ""
+---
+
+## Static Assets
+
+First, in Next.js, there's a rule for using static assets that they should be placed in a directory named `public` directly under the root directory.
+For more details, please check the official website below:
+[Optimizing: Static Assets | Next.js](https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets)
+
+### Directory for images
+
+`Campanula` has the directories `blog` and `stock` in the `public/images` directory.
+These directories are used to store images for blog posts and other pages like the home and about pages.
+You are free to create subdirectories or change directory names, but you must also update the paths in the front matter and `siteMetadata.js` to reflect the changes for the images.

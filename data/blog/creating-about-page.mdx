@@ -1,0 +1,54 @@
+---
+title: "How to create a About page in Campanula"
+date: "2023-07-26"
+category: "Tech"
+tags: ["usage"]
+subtitle: "Here are the steps to create a About page in Campanula"
+lastmod: "2023-07-26"
+draft: false
+metadescription: "Here are the steps to create a About page in Campanula"
+image: ""
+---
+
+## Overview
+
+The `About` page is a static page designed for self-introductions and related information.
+It can be accessed at the path `/about`.
+By updating the configuration file and creating the necessary Markdown file, you can easily create the `About` page without the need to write any JavaScript code.
+The steps below will guide you through the process of creating an `About` page.
+
+## Creating the About page
+
+![Image of the About page overview](/images/blog/usage-about-overview.png)
+
+As depicted in the image above, the `About` page currently consists of a `Hero` section at the top and markdown file contents below.
+To create your `About` page, follow these instructions:
+
+1. In the `data/about` directory, create a markdown file for the `About` page.
+You may choose to overwrite the existing `about.mdx` file provided as a sample.
+2. Populate the `Hero` section with relevant information. See [Frontmatter](#frontmatter)
+3. Describe the content you wish to display on the `About` page in the section below the front matter.
+4. Modify the `about/fileName` variable in the `data/siteMetadata.js` file to match the filename of the markdown file you created in step 1.
+
+### Frontmatter
+
+In the frontmatter, you can specify the details to be displayed in the `Hero` section of your `About` page.
+
+```javascript:Frontmatter showLineNumbers
+---
+heroTitle: "I'm Dan Shari 🐱" # required
+description: "This is the About Page." # optional (If blank, display nothing)
+buttonEnable: true # required (If false, display nothing)
+buttonText: "Contact Me" # optional (Please write text if button enabled)
+buttonHref: "mailto:address@yoursite.com" # optional (Please write href if button enabled)
+image: "/images/stock/avatar.png" # optional (If blank, display avatarImage.)
+bgColorLight: "#D6DAFF" # optional (If blank, display default)
+bgColorDark: "#204764" # optional (If blank, display default)
+---
+```
+
+- Enter the title you want to display in the `Hero` Section in the `title` field. This field is required.
+- Describe in the `description` what you want to display under the `title`.  If you don't need a `description`, leave it as `''`
+- You can set a button in the `Hero section`. This button can be linked to blog posts or static pages within the website or external URLs. Set `buttonEnable` to `true` to enable the button. if enabled, `buttonText` and `buttonHref` must be specified.
+- Please enter the path to the image. If this field is blank, the image specified in the `avatarImage` variable in `siteMetadata.js` is displayed.
+- You can set a background color for the `Hero` Section. Please provide the background color in hexadecimal format for both light mode and dark mode. If you don't need to set a background color, leave it as `''`. The default color will be displayed in that case.
