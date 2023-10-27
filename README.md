@@ -4,7 +4,7 @@ A simple blog template built with Next.js that allows you to generate static blo
 
 - [Next.js by Vercel](https://nextjs.org/) ver13
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Designed using themes and components from [daisyUI](https://daisyui.com/)
+- Designed using themes and components from [daisyUI](https://daisyui.com/). You can customize it with `daisyUI` theme. You can also create your own theme.
 - All pages & blog articles are made with Mardown file
 - Switchable dark mode
 - Support [MDX](https://mdxjs.com/) file
@@ -50,7 +50,7 @@ Make sure you have the following software installed:
 
 By default, there are two static pages, `Home` and `About`, and all others are related to blog posts.<br>
 Please also check out the following article on routing:<br>
-[Routing and blog navigation](https://campanula-demo.vercel.app/blog/routing-and-blog-navigation)
+[Routing and blog navigation](https://campanula-demo.vercel.app/blog/routing-and-blog-navigation)<br>
 Please also check out the following article on asset files:<br>
 [The location of asset files in Campanula](https://campanula-demo.vercel.app/blog/static-assets-in-campanula)
 
@@ -129,10 +129,13 @@ The easiest way to deploy Next.js to production is to use the Vercel platform de
 - [Deploy to Vercel - Deploying Your Next.js App | Learn Next.js](https://nextjs.org/learn/basics/deploying-nextjs-app/deploy)
 - [Next.js on Vercel | Vercel Docs](https://vercel.com/docs/frameworks/nextjs)
 
-## Customization
+## Customizing the UI
+
+TODO
 
 Feel free to customize the template to suit your needs. You can modify the layout, styles, and even add new features.
 
+You can customize it with `daisyUI` theme. You can also create your own theme.
 
 ## Referenced information
 
