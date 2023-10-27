@@ -43,11 +43,13 @@ const LatestPosts = () => {
     <>
       {latestPosts.length > 0 && (
         <div className="mt-4 latestposts sm:mt-8 2xl:mt-12">
-          <div className="text-2xl font-bold text-center sm:text-4xl">
-            <Link key="LatestPosts" href="/blog">
-              Latest Posts
-            </Link>
-          </div>
+          {siteMetadata.home.latestPosts.title && (
+            <div className="text-2xl font-bold text-center sm:text-4xl">
+              <Link key="LatestPosts" href="/blog">
+                {siteMetadata.home.latestPosts.title}
+              </Link>
+            </div>
+          )}
 
           <div className="mt-4 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 sm:place-content-stretch xl:gap-16 sm:mt-8 2xl:mt-12">
             {latestPosts.map((post) => (

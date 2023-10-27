@@ -82,6 +82,7 @@ const siteMetadata = {
       },
     ],
     latestPosts: {
+      title: "Latest Posts", // optional (If blank, display nothing)
       maxCount: 9, // required
     },
   },
