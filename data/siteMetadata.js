@@ -32,6 +32,7 @@ const siteMetadata = {
     follow: true, // required
   },
   // Common
+  readMoreButtonTitle: "Read More...", // required (Edit the text for the 'Read More' button. If blank, display default)
   avatarImage: "/images/stock/avatar.png", // required
   authorDescription:
     "Awesome Inc. CTO TypeScript / Next.js / Tailwind CSS / Daisy UI / Anime", // optional (If blank, display nothing)

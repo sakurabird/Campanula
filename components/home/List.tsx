@@ -30,6 +30,9 @@ const List = () => {
     0,
     siteMetadata.home.list.maxCount ? siteMetadata.home.list.maxCount : posts.length
   )
+  const readMoreButtonTitle = siteMetadata.readMoreButtonTitle
+    ? siteMetadata.readMoreButtonTitle
+    : 'Read More...'
 
   return (
     <>
@@ -60,7 +63,7 @@ const List = () => {
                 href={siteMetadata.home.list.href}
                 className="hover-not hover:opacity-70"
               >
-                Read more...
+                {readMoreButtonTitle}
               </Link>
             </button>
           )}

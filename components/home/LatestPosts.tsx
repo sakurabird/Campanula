@@ -38,6 +38,9 @@ const LatestPosts = () => {
     0,
     siteMetadata.home.latestPosts.maxCount ? siteMetadata.home.latestPosts.maxCount : 0
   )
+  const readMoreButtonTitle = siteMetadata.readMoreButtonTitle
+    ? siteMetadata.readMoreButtonTitle
+    : 'Read More...'
 
   return (
     <>
@@ -60,7 +63,7 @@ const LatestPosts = () => {
           {posts.length > siteMetadata.home.latestPosts.maxCount && (
             <button className="mt-4 sm:mt-12 btn btn-primary 2xl:btn-lg">
               <Link key="readMore" href="/blog" className="hover-not hover:opacity-70">
-                Read more...
+                {readMoreButtonTitle}
               </Link>
             </button>
           )}

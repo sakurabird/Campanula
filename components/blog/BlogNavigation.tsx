@@ -34,6 +34,9 @@ const BlogNavigation = () => {
       result[current.yy_mm] = current
       return result
     }, {} as GroupedDate)
+  const readMoreButtonTitle = siteMetadata.readMoreButtonTitle
+    ? siteMetadata.readMoreButtonTitle
+    : 'Read More...'
 
   const AuthorView = (
     <div className="w-full p-2 mx-auto">
@@ -96,7 +99,7 @@ const BlogNavigation = () => {
       {categories.length > categoryMaxCount && (
         <button className="my-2 btn btn-outline btn-xs text-base-content/50">
           <Link key="readMoreCategories" href="/categories">
-            Read more...
+            {readMoreButtonTitle}
           </Link>
         </button>
       )}
@@ -126,7 +129,7 @@ const BlogNavigation = () => {
       {tags.length > tagMaxCount && (
         <button className="my-2 btn btn-outline btn-xs text-base-content/50">
           <Link key="readMoreTags" href="/tags">
-            Read more...
+            {readMoreButtonTitle}
           </Link>
         </button>
       )}
@@ -155,7 +158,7 @@ const BlogNavigation = () => {
       {posts.length > latestMaxCount && (
         <button className="my-2 btn btn-outline btn-xs text-base-content/50">
           <Link key="readMoreLatest" href="/blog">
-            Read more...
+            {readMoreButtonTitle}
           </Link>
         </button>
       )}
@@ -185,7 +188,7 @@ const BlogNavigation = () => {
       {Object.keys(groupedDates).length > archiveMaxcount && (
         <button className="my-2 btn btn-outline btn-xs text-base-content/50">
           <Link key="readMoreArchive" href="/archive">
-            Read more...
+            {readMoreButtonTitle}
           </Link>
         </button>
       )}
