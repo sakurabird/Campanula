@@ -23,7 +23,7 @@
     "eslint-config-next": "^14.0.1",
     "feed": "^4.2.2",
     "mdx-bundler": "^9.2.1",
-    "next": "^13.4.6",
+    "next": "^13.5.6",
     "next-contentlayer": "^0.3.4",
     "next-share": "^0.20.0",
     "next-themes": "^0.2.1",
